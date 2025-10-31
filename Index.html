@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Build Your Resume</h1>
+    <form id="resume-form">
+        <label>Name: <input type="text" id="name"></label><br>
+        <label>Email: <input type="email" id="email"></label><br>
+        <label>Experience: <textarea id="experience"></textarea></label><br>
+        <button type="button" id="generate">Generate Resume</button>
+    </form>
+    <div id="resume-preview" style="display:none;">
+        <h2 id="preview-name"></h2>
+        <p id="preview-email"></p>
+        <p id="preview-experience"></p>
+        <button id="download-pdf">Download PDF</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
